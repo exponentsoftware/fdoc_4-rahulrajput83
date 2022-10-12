@@ -1,0 +1,271 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+nav {
+    background-color: black;
+    color: white;
+    padding: 0.3rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h3 {
+    font-size: 1rem;
+}
+
+nav .nav-item {
+    width: fit-content;
+}
+nav .nav-item span {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+nav .nav-item span:last-child {
+    padding: 0.4em 1rem;
+    border: 0.15rem solid white;
+    border-radius: 50vw;
+}
+
+.detail {
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 20rem;
+}
+
+.detail h1 {
+    font-size: 3rem;
+}
+.detail span {
+    font-weight: 600;
+}
+
+.about, .ProjectsDiv, .whyDifferent, .experience, .skill {
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .about-item, .ProjectsDiv .projects, .experience .myExperience, .skill .mySkill {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .about-item p, .ProjectsDiv .projects p {
+    width: 100%;
+    text-align: justify;
+    text-justify: kashida;
+    text-align-last: center;
+    font-size: 0.9rem;
+    color: rgb(61, 61, 61);
+}
+
+.about .about-item .social i {
+    font-size: 1.25rem;
+    margin: 0.8rem;
+    padding: 0.4rem;
+    cursor: pointer;
+    color: rgb(47, 47, 151);
+}
+.about .about-item .social i:hover {
+    color: black;
+}
+.ProjectsDiv {
+    background: rgb(47, 47, 151);
+    color: white;
+}
+.ProjectsDiv .projects {
+    width: 80% !important;
+}
+.ProjectsDiv .projects > p {
+    width: 70% !important;
+    color: white !important;
+}
+
+.ProjectsDiv .projects .Cards {
+    padding: 2rem 0;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.ProjectsDiv .projects .Cards .projectCard {
+    background-color: white;
+    color: black !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.ProjectsDiv .projects .Cards .projectCard button {
+    width: fit-content;
+    margin-top: 0.5rem;
+    padding: 0.6rem 1.5rem;
+    background: rgb(47, 47, 151);
+    border: none;
+    border-radius: 50vw;
+    color: white;
+    cursor: pointer;
+}
+
+.ProjectsDiv .projects .Cards .projectCard button:hover {
+    color: black;
+    background: white;
+}
+
+.ProjectsDiv .projects .Cards .projectCard p:first-child{
+    font-size: 1.2rem;
+    color: black !important;
+}
+
+.whyDifferent .different > p, .skill .mySkill > p {
+    margin: 0 auto;
+    width: 60% !important;
+}
+
+.whyDifferent .different, .skill .mySkill {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.whyDifferent .different .Cards {
+    padding: 2rem 0;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+ .whyDifferent .different > p, .skill .mySkill > p {
+    width: 100%;
+    text-align: justify;
+    text-justify: kashida;
+    text-align-last: center;
+    font-size: 0.9rem;
+    color: rgb(61, 61, 61);
+}
+
+.whyDifferent .different .Cards .detail_Card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.whyDifferent .different .Cards .detail_Card i{
+    color: rgb(47, 47, 151);
+    font-size: 1.5rem;
+}
+
+.whyDifferent .different .Cards .detail_Card .column {
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.whyDifferent .different .Cards .detail_Card .column p:first-child {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: black;
+}
+
+.whyDifferent .different .Cards .detail_Card .column p:last-child {
+    margin: 0;
+    text-align: left;
+    font-size: 0.9rem;
+    color: rgb(61, 61, 61);
+}
+
+.experience {
+    background-color: rgb(47, 47, 151) !important;
+}
+.experience .myExperience {
+    color: white !important;
+}
+
+.experience .myExperience .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.experience .myExperience .grid p {
+    font-size: 0.9rem;
+    color: white;
+}
+
+.skill .mySkill .category {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.skill .mySkill .category .detail-skill {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.9rem;
+    font-weight: 600;
+    justify-content: space-between;
+}
+.skill .mySkill .category .progress {
+    width: 100%;
+    border-radius: 999px;
+    background-color: rgb(240, 240, 240);
+}
+.skill .mySkill .category .progress .Branding {
+    width: 85%;
+    background: rgb(47, 47, 151);
+    height: 0.4rem;
+    border-radius: 9999px;
+}
+.skill .mySkill .category .progress .Visual {
+    width: 95%;
+    background: rgb(47, 47, 151);
+    height: 0.4rem;
+    border-radius: 9999px;
+}
+.skill .mySkill .category .progress .Storyboarding {
+    width: 80%;
+    background: rgb(47, 47, 151);
+    height: 0.4rem;
+    border-radius: 9999px;
+}
+.skill .mySkill .category .progress .Strategy {
+    width: 75%;
+    background: rgb(47, 47, 151);
+    height: 0.4rem;
+    border-radius: 9999px;
+}
+
+@media (max-width: 768px) {
+    .ProjectsDiv .projects .Cards, .whyDifferent .different .Cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* width: 80% */
+    .ProjectsDiv .projects > p {
+        width: 100% !important;
+    }
+    .whyDifferent .different > p, .skill .mySkill > p {
+        width: 100% !important;
+    }
+    .experience .myExperience .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    nav .nav-item {
+        display: none;
+    }
+}
