@@ -1,0 +1,302 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem;
+    background: #e2e20f;
+    color: white;
+}
+
+nav .title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+nav .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-item span {
+    margin: 0 1.5rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+nav .nav-item span:last-child {
+    border: 0.15rem solid white;
+    padding: 0.3rem 1rem;
+    border-radius: 50vw;
+}
+
+nav .nav-item span:last-child:hover {
+    background: white;
+    color: #e2e20f;
+}
+
+.heading {
+    display: flex;
+    background: #e2e20f;
+    min-height: 20rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: white;
+    font-weight: 600;
+}
+
+.about, .projects, .experience, .different {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.about, .different {
+    background: rgb(246, 249, 250);
+}
+
+.about .container, .projects .container, .experience .container, .different .container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.about .container img {
+    height: 25rem;
+    margin: 0 1.5rem 0 0;
+}
+
+.about .container .aboutMe {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.about .container .aboutMe span, .experience .container span {
+    font-weight: 550;
+    font-size: 1.1rem;
+}
+
+.about .container .aboutMe p {
+    font-size: 0.8rem;
+    margin: 1.5rem 0;
+}
+.about .container .aboutMe .line {
+    width: 23%;
+    margin: 0;
+    height: 0.15rem;
+    background: rgb(214, 213, 213);
+}
+
+.about .container .aboutMe .social{
+    margin: 1rem 0;
+}
+
+.about .container .aboutMe .social i{
+    margin: 0 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: #e2e20f;
+}
+
+.projects, .experience {
+    background-color: rgb(247, 242, 233);
+}
+
+.projects .container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects .container > span {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.projects .container > p, .different .container > p {
+    width: 70%;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.projects .container .myProjects {
+    padding: 2rem 0;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.projects .container .myProjects .project-item {
+    background: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.projects .container .myProjects .project-item span {
+    font-weight: 600;
+}
+.projects .container .myProjects .project-item p{
+    text-align: center;
+    font-size: 0.8rem;
+    height: 100%;
+}
+.projects .container .myProjects .project-item button {
+    padding: 0.6rem 1.5rem;
+    border-radius: 50vw;
+    font-size: 0.8rem;
+    background: #dddd23;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.experience .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience .container .experiense-list {
+    padding: 1rem 0;
+    display: grid;
+    row-gap: 0.5rem;;
+    column-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 0.8rem;
+}
+
+.experience .container .experiense-list p{
+    margin: 0;
+}
+
+.different .container > span {
+    font-weight: 550;
+    font-size: 1.1rem;
+}
+
+.different .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.different .container .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+.different .container .grid .left .content {
+    display: flex;
+    justify-content: center;
+}
+.different .container .grid .left .content .head p {
+    font-size: 0.8rem;
+    margin: 0;
+    margin-top: 0.4rem;
+}
+.different .container .grid .left .content i{
+    margin: 1rem 1rem 0 0;
+    font-size: 1.5rem;
+}
+
+.different .container .grid .left .content .head span {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.different .container .grid .item:last-child {
+    grid-column: span 2 / span 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.different .container .grid .item:last-child .content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.different .container .grid .item:last-child .content .progressBar {
+    width: 100%;
+    background: gainsboro;
+    margin-top: 0.4rem;
+    border-radius: 50vw;
+}
+
+.different .container .grid .item:last-child .content .progressBar .progress {
+    background-color: #e2e20f;
+    height: 0.4rem;
+    border-radius: 50vw;
+}
+
+.different .container .grid .item:last-child .content .progressBar .Branding {
+    width: 85%;
+}
+
+.different .container .grid .item:last-child .content .progressBar .Visual {
+    width: 95%;
+}
+
+.different .container .grid .item:last-child .content .progressBar .Storyboarding {
+    width: 80%;
+}
+
+.different .container .grid .item:last-child .content .progressBar .Strategy {
+    width: 75%;
+}
+
+.different .container .grid .item:last-child .content .progressBar .Strategy {
+    width: 75%;
+}
+
+
+.different .container .grid .item:last-child .content .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .experience .container .experiense-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .projects .container .myProjects {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .about .container {
+        flex-direction: column;
+    }
+    nav .nav-item {
+        display: none;
+    }
+    .about .container .aboutMe span {
+        text-align: center;
+        margin: 2rem auto 0 auto;
+    }
+    .projects .container > p, .different .container > p {
+        width: 100%;
+    }
+    .different .container .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .different .container .grid .item:last-child {
+        grid-column: 1;
+    }
+}
